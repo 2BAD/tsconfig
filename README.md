@@ -14,7 +14,7 @@ $ npm install --save-dev @2bad/tsconfig
 
 ```json
 {
-  "extends": "@2bad/tsconfig/tsconfig.json",
+  "extends": "@2bad/tsconfig",
   "compilerOptions": {
     "outDir": "dist"
   }
