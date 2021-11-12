@@ -1,0 +1,29 @@
+{
+  "name": "@2bad/tsconfig",
+  "version": "1.0.0",
+  "description": "Shared TypeScript config",
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "ts",
+    "config"
+  ],
+  "homepage": "https://github.com/2BAD/tsconfig#readme",
+  "bugs": {
+    "url": "https://github.com/2BAD/tsconfig/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2BAD/tsconfig"
+  },
+  "license": "MIT",
+  "author": "2BAD (https://github.com/2BAD)",
+  "contributors": [
+    {
+      "name": "Jason Hyde",
+      "email": "github@2bad.me",
+      "url": "https://github.com/mrhyde"
+    }
+  ],
+  "main": "tsconfig.json"
+}
