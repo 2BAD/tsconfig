@@ -25,5 +25,8 @@
       "url": "https://github.com/mrhyde"
     }
   ],
-  "main": "tsconfig.json"
+  "main": "tsconfig.json",
+  "files": [
+    "tsconfig.json"
+  ]
 }
