@@ -16,7 +16,8 @@ $ npm install --save-dev @2bad/tsconfig
 {
   "extends": "@2bad/tsconfig",
   "compilerOptions": {
-    "outDir": "dist"
-  }
+    "outDir": "build"
+  },
+  "include": ["source", "test"]
 }
 ```
