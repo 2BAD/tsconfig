@@ -28,5 +28,11 @@
   "main": "tsconfig.json",
   "files": [
     "tsconfig.json"
-  ]
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "volta": {
+    "node": "20.1.0"
+  }
 }
