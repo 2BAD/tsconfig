@@ -16,8 +16,26 @@ $ npm install --save-dev @2bad/tsconfig
 {
   "extends": "@2bad/tsconfig",
   "compilerOptions": {
-    "outDir": "build"
+    "outDir": "build",
+    "baseUrl": "source"
+  }
+}
+```
+
+If you're willing to use path mapping, you should install [tsc-alias](https://github.com/justkey007/tsc-alias) and update the configuration accordingly.
+
+```json
+{
+  "extends": "@2bad/tsconfig",
+  "compilerOptions": {
+    "outDir": "build",
+    "baseUrl": "source",
+    "paths": {
+      "~/*": ["./*"]
+    }
   },
-  "include": ["source", "test"]
+  "tsc-alias": {
+    "resolveFullPaths": true
+  }
 }
 ```
