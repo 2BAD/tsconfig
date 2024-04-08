@@ -30,7 +30,7 @@
     "tsconfig.json"
   ],
   "engines": {
-    "node": ">=18"
+    "node": "^20"
   },
   "volta": {
     "node": "20.12.1"
