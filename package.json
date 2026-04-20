@@ -29,12 +29,12 @@
   "files": [
     "tsconfig.json"
   ],
-  "packageManager": "npm@11.10.1",
+  "packageManager": "npm@11.12.1",
   "engines": {
     "node": ">=24"
   },
   "volta": {
-    "node": "24.13.1",
-    "npm": "11.10.1"
+    "node": "24.15.0",
+    "npm": "11.12.1"
   }
 }
