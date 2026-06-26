@@ -8,6 +8,8 @@ Shared [TypeScript config](https://www.typescriptlang.org/docs/handbook/tsconfig
 $ npm install --save-dev @2bad/tsconfig
 ```
 
+Requires TypeScript >= 5.8.
+
 ## Usage
 
 `tsconfig.json`
@@ -17,25 +19,24 @@ $ npm install --save-dev @2bad/tsconfig
   "extends": "@2bad/tsconfig",
   "compilerOptions": {
     "outDir": "build",
-    "baseUrl": "source"
+    "types": ["node"]
   }
 }
 ```
 
-If you're willing to use path mapping, you should install [tsc-alias](https://github.com/justkey007/tsc-alias) and update the configuration accordingly.
+The base sets `types` to `[]`, so list the ambient type packages your project needs (for example `["node"]`). This matches the TypeScript 7.0 default and keeps type resolution explicit.
+
+For path mapping, inline the source directory into each `paths` entry. `baseUrl` is deprecated in TypeScript 6.0 and removed in 7.0, so it is no longer used.
 
 ```json
 {
   "extends": "@2bad/tsconfig",
   "compilerOptions": {
     "outDir": "build",
-    "baseUrl": "source",
+    "types": ["node"],
     "paths": {
-      "~/*": ["./*"]
+      "~/*": ["./source/*"]
     }
-  },
-  "tsc-alias": {
-    "resolveFullPaths": true
   }
 }
 ```

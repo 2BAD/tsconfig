@@ -1,6 +1,6 @@
 {
   "name": "@2bad/tsconfig",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "description": "Shared TypeScript config",
   "keywords": [
     "tsconfig",
@@ -29,6 +29,9 @@
   "files": [
     "tsconfig.json"
   ],
+  "peerDependencies": {
+    "typescript": ">=5.8"
+  },
   "packageManager": "npm@11.17.0",
   "engines": {
     "node": ">=24"
