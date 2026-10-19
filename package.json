@@ -32,12 +32,12 @@
   "peerDependencies": {
     "typescript": ">=5.8"
   },
-  "packageManager": "pnpm@11.28.5",
+  "packageManager": "pnpm@11.28.6",
   "engines": {
     "node": ">=24"
   },
   "volta": {
-    "node": "24.21.0",
-    "pnpm": "11.28.5"
+    "node": "24.22.0",
+    "pnpm": "11.28.6"
   }
 }
